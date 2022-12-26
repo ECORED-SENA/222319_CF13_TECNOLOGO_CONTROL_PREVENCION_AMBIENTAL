@@ -446,47 +446,498 @@
     p.mb-2 <b>Tipos de vidrio</b>
     p.mb-4 Analice la siguiente tabla en la que se presentan los tipos de vidrio.
 
-    .row.justify-content-center
+    .row.justify-content-center.mb-4
       .col-lg-10.mb-4
-        h5.mb-0 Figura 3 
-        span Tipos de envases Tetra Pak 
-      .col-lg-8
+        h5.mb-0 Tabla 4 
+        span.mb-2 Tipos de vidrio 
+        .tabla-a.color-acento-botones 
+          table
+            caption Nota. Guía para elaboración y presentación del plan de gestión integral de residuos hospitalarios y similares-pgirhs aplicado a microgeneradores. Área Metropolitana de Bucaramanga (2002). 
+            thead
+              tr(style='background-color: #80CAB6')
+                <th colspan="3">CARACTERIZACIÓN CUANTITATIVA</th>
+            tbody
+              tr(style='background-color: #AADFD1')
+                td TIPO DE VIDRIO POSCONSUMO COMERCIALIZABLE
+                td DESCRIPCIÓN
+                td CONTAMINANTES DEL PROCESO
+              tr
+                td(style='background-color: #D3EDE5') Vidrio envase ámbar
+                td(style='background-color: #D3EDE5') Se compra completo o roto. No debe mezclarse con otros colores ni con vidrio plano. El vidrio de refractarias o cafeteras no es reciclable, por tanto, no debe mezclarse con ningún tipo de vidrio posconsumo para venta.
+                <td rowspan="6" style='background-color: #F3FEFB' > Material ferroso (magnético): puntillas, tapas, clavos, varillas, limadura de hierro, alambre o cualquier elemento magnético. Material no ferroso (no magnético): principalmente el aluminio, en cualquier presentación, cobre, zinc, estaño, plomo.Vidrios especiales: espejos, vidrio laminado (automóviles), bombillos, fardas, tubos fluorescentes, vidrio de ampolletas.Material inorgánico: piedras de cualquier tipo, gravilla, arena, cemento, concreto, cerámica, vidrio refractario o de refractarias Materiales orgánicos: trapos, papel, cartón, madera, plástico (bolsas, pitillos), caucho, tierra, jeringas.</td>
+              tr(style='background-color: #F6F6F6')
+                td Vidrio envase verde
+                td Se compra completo o roto. No debe mezclarse con otros colores ni con vidrio plano.
+              tr(style='background-color: #D3EDE5')
+                td Vidrio envase transparente (blanco)
+                td Se compra completo o roto. No debe mezclarse con otros colores ni con vidrio plano.
+              tr(style='background-color: #F6F6F6')
+                td Vidrio plano transparente
+                td Se compra completo o roto. No debe mezclarse con otros colores ni con envases. El espejo no es reciclable, por tanto, no debe mezclarse con ningún tipo de vidrio posconsumo para venta.
+              tr(style='background-color: #D3EDE5')
+                td Vidrio plano bronce
+                td Se compra completo o roto. No debe mezclarse con otros colores ni con envases. El espejo no es reciclable, por tanto, no debe mezclarse con ningún tipo de vidrio posconsumo para venta.
+    .row.justify-content-center.mb-4
+      .col-lg-10
+        .tarjeta.color-4.p-4
+          .row.align-items-center 
+            .col-lg-12
+              .row.mb-2
+                .col-lg-1
+                  figure.mb-2
+                    img(src='@/assets/curso/temas/icon.png', alt='Texto que describa la imagen')
+                .col-lg-11
+                  p.mb-4 Para profundizar en factores alusivos al vidrio y sus procesos de reciclaje, observe con atención los videos que se le proponen a continuación:
+                  .row
+                    .col-lg-6
+                      a.anexo.mb-3(href="https://www.youtube.com/watch?v=QnvrGBHh2XE" target="_blank")
+                        .anexo__icono
+                          img(src="@/assets/template/icono-link.svg")
+                        .anexo__texto
+                          p <b>Enlace web.</b>> Socyaoficial (2015, 25 agosto) Te invitamos a conocer cómo funciona la plata de reciclaje de vidrio.
+                    .col-lg-6
+                      a.anexo.mb-3(href="https://www.youtube.com/watch?v=rGAKfGJqheg" target="_blank")
+                        .anexo__icono
+                          img(src="@/assets/template/icono-link.svg")
+                        .anexo__texto
+                          p <b>Enlace web.</b>> Telemadrid (2011, 30 agosto) Así se recicla el vidrio.
+    separador
+
+    #t_2_5.titulo-segundo.color-acento-contenido(data-aos="fade")
+      .h2 2.5 Metal
+
+    .bloque-texto-g.color-acento-contenido.p-4.mb-4
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/tema2/img16.jpg')})`}"
+      )
+      .bloque-texto-g__texto.p-5
+        p.mb-0 El acero y la chatarra ferrosa son infinitamente reutilizables en la naturaleza, aunque se tienen unas mermas en su procesamiento. La producción de acero a partir del reciclaje de chatarra ferrosa es amigable y sostenible con el medio ambiente, porque disminuye el consumo de recursos naturales no renovables. El acero producido a partir del reciclaje y fundición de chatarra ferrosa queda en condición de acero nuevo cumpliendo con todas las características físico-mecánicas exigidas en las normas nacionales e internacionales para la fabricación de acero.
+    p.mb-4 La mayoría de siderúrgicas colombianas son semiintegradas, lo que implica que su materia prima es la chatarra ferrosa. La chatarra ferrosa se puede procesar, manipular, preparar y fundir, siempre y cuando no presente un riesgo para la salud de las personas, el medio ambiente o riesgo para los bienes e instalaciones.
+
+    .bg_grad-05
+      .row.justify-content-center.mb-5
+        .col-lg-10.mb-4
+          h5.mb-0 Figura 5
+          span  Círculo del reciclaje del metal
+        .col-lg-10
+          figure
+            img(src='@/assets/curso/tema2/img17.jpg', alt='Texto que describa la imagen')
+          figcaption Nota. ANDI (2017). Calidades de materiales para reciclaje. p.27
+      p.mb-5 Conozca, en el siguiente recurso, los requisitos que exige el proceso de reciclaje del metal.
+
+      .tarjeta.colorsly.p-4
+        SlyderA(tipo="b")
+          .row
+            .col-md-6.mb-4.mb-md-0
+              h4 Requisitos que debe cumplir un residuo de metal para ser reciclado
+              ul.lista-ul--color
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Recipientes cerrados y presurizados – Cilindros con válvulas, sistemas de refrigeración sin purgar.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Residuos peligrosos (sólidos, líquidos y plasma).
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Canecas de pintura con residuo superior al 10 %.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Pilas y baterías.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Cofres o cajas fuertes rellenos de concreto.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Filtros de aceite contaminados con aceite.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Productos electrónicos.
+            .col-md-6
+              figure
+                img(src='@/assets/curso/tema2/4.png', alt='Texto que describa la imagen')
+
+          .row
+            .col-md-6.mb-4.mb-md-0
+              h4 Requisitos que debe cumplir un residuo de metal para ser reciclado
+              ul.lista-ul--color
+                li 
+                  i.fas.fa-check
+                  p.mb-2 Metales pesados (plomo, cadmio, etc.).
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Amortiguadores sellados y similares.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Transformadores y capacitores con askarel.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Dispositivos con contenido de mercurio.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Materiales con radiactividad.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Acero inoxidable.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Rotores de motores eléctricos y que contengan cobre.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Cemento, tierra, concreto, ladrillos y otros similares.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Chatarra con elementos químicos.
+            .col-md-6
+              figure
+                img(src='@/assets/curso/tema2/5.png', alt='Texto que describa la imagen')
+          
+          .row
+            .col-md-6.mb-4.mb-md-0
+              h4 Requisitos que debe cumplir un residuo de metal para ser reciclado
+              ul.lista-ul--color
+                li 
+                  i.fas.fa-check
+                  p.mb-2 Piezas y partes con asbesto.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Chatarra con gomas, cauchos, asfalto y otros polímeros.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Calamina, cascarilla y otros derivados de oxidaciones e impurezas y degradaciones del acero.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Residuales de los procesos de corte y soldadura.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Cuerpos moledores de la industria cementera y cerámica, con alto contenido de cromo y manganeso.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Aleaciones de aceros de alta resistencia, como brocas con tungsteno, cromo-vanadio.
+                li 
+                  i.fas.fa-check
+                  p.mb-0 Otros considerados peligrosos o no aptos.
+            .col-md-6
+              figure
+                img(src='@/assets/curso/tema2/6.png', alt='Texto que describa la imagen')
+    p.mb-4 Hay que mencionar, además, que existen condiciones preestablecidas, bajo las cuales serán, o no, aceptados algunos materiales. Se podrá recibir chatarra derivada de los siguientes orígenes o condiciones, si cumplen los requisitos descritos a continuación:
+
+    .row.align-items-center.mb-2
+      .col-lg-6
+        LineaTiempoD
+          .row.align-items-center(numero="1" titulo="Material ferroviario, rieles y tapas de alcantarilla:")
+            .col-md-4
+              figure
+                img(src='@/assets/curso/tema2/img18.jpg', alt='Texto que describa la imagen')
+            .col-md-8
+              p.mb-0 El proveedor siempre debe certificar su origen legal y el comprador responsable informará al patio su envío.
+
+          .row.align-items-center(numero="2" titulo="Tanques de almacenamiento de combustible:")
+            .col-md-4
+              figure
+                img(src='@/assets/curso/tema2/img19.jpg', alt='Texto que describa la imagen')
+            .col-md-8
+              p.mb-0 Se reciben mediante la presentación de un certificado de desgasificación y tener dos aberturas de un mínimo de 200 x 200 mm.
+
+          .row.align-items-center(numero="3" titulo="Material de guerra, bélico, morteros, balas y similares:")
+            .col-md-4
+              figure
+                img(src='@/assets/curso/tema2/img20.jpg', alt='Texto que describa la imagen')
+            .col-md-8
+              p.mb-0 Se recibe mediante la presentación de declaración escrita de organismo militar competente informando que la chatarra se encuentra completamente desactivada y no presenta peligro, pudiendo ser manejada, cizallada, prensada o fundida.
+
+          .row.align-items-center(numero="4" titulo="Tubería petrolera de cañoneo")
+            .col-md-4
+              figure
+                img(src='@/assets/curso/tema2/img21.jpg', alt='Texto que describa la imagen')
+            .col-md-8
+              p.mb-0 La tubería petrolera de cañoneo debe venir sin los estopines y sin el ducto interior donde vienen las cargas explosivas.
+      .col-lg-6
         figure
-          img(src='@/assets/curso/tema2/img13.jpg', alt='Texto que describa la imagen')
+          img(src='@/assets/curso/tema2/img22.jpg', alt='Texto que describa la imagen')
 
-          h5 Tabla 5
-      span Caracterización cuantitativa
-    .tabla-a.color-acento-botones 
-      table
-        caption Nota. Guía para elaboración y presentación del plan de gestión integral de residuos hospitalarios y similares-pgirhs aplicado a microgeneradores. Área Metropolitana de Bucaramanga (2002). 
-        thead
-          tr(style='background-color: #80CAB6')
-            <th colspan="3">CARACTERIZACIÓN CUANTITATIVA</th>
-        tbody
-          tr(style='background-color: #AADFD1')
-            td TIPO DE VIDRIO POSCONSUMO COMERCIALIZABLE
-            td DESCRIPCIÓN
-            td CONTAMINANTES DEL PROCESO
-          tr
-            td(style='background-color: #D3EDE5') Vidrio envase ámbar
-            td(style='background-color: #D3EDE5') Se compra completo o roto. No debe mezclarse con otros colores ni con vidrio plano. El vidrio de refractarias o cafeteras no es reciclable, por tanto, no debe mezclarse con ningún tipo de vidrio posconsumo para venta.
-            <td rowspan="6" style='background-color: #F3FEFB' > Material ferroso (magnético): puntillas, tapas, clavos, varillas, limadura de hierro, alambre o cualquier elemento magnético. Material no ferroso (no magnético): principalmente el aluminio, en cualquier presentación, cobre, zinc, estaño, plomo.Vidrios especiales: espejos, vidrio laminado (automóviles), bombillos, fardas, tubos fluorescentes, vidrio de ampolletas.Material inorgánico: piedras de cualquier tipo, gravilla, arena, cemento, concreto, cerámica, vidrio refractario o de refractarias Materiales orgánicos: trapos, papel, cartón, madera, plástico (bolsas, pitillos), caucho, tierra, jeringas.</td>
-          tr(style='background-color: #F6F6F6')
-            td Vidrio envase verde
-            td Se compra completo o roto. No debe mezclarse con otros colores ni con vidrio plano.
-          tr(style='background-color: #D3EDE5')
-            td Vidrio envase transparente (blanco)
-            td Se compra completo o roto. No debe mezclarse con otros colores ni con vidrio plano.
-          tr(style='background-color: #F6F6F6')
-            td Vidrio plano transparente
-            td Se compra completo o roto. No debe mezclarse con otros colores ni con envases. El espejo no es reciclable, por tanto, no debe mezclarse con ningún tipo de vidrio posconsumo para venta.
-          tr(style='background-color: #D3EDE5')
-            td Vidrio plano bronce
-            td Se compra completo o roto. No debe mezclarse con otros colores ni con envases. El espejo no es reciclable, por tanto, no debe mezclarse con ningún tipo de vidrio posconsumo para venta.
-      
-     
+    .row.align-items-center.mb-4
+      .col-lg-6
+        figure
+          img(src='@/assets/curso/tema2/img23.jpg', alt='Texto que describa la imagen')
+      .col-lg-6
+        LineaTiempoD
+          .row.align-items-center(numero="5" titulo="Cilindros de gases")
+            .col-md-4
+              figure
+                img(src='@/assets/curso/tema2/img24.jpg', alt='Texto que describa la imagen')
+            .col-md-8
+              p.mb-0 Sólo serán aceptados si estuviesen despresurizados y sin válvulas.
 
+          .row.align-items-center(numero="6" titulo="Canecas posconsumo agroquímico:")
+            .col-md-4
+              figure
+                img(src='@/assets/curso/tema2/img25.jpg', alt='Texto que describa la imagen')
+            .col-md-8
+              p.mb-0 Sólo serán aceptadas si presentan certificado de triple lavado, entregado por la empresa, firmado por químico o agroquímico, siempre que presenten símbolos de “peligro”, “riesgo de envenenamiento” y otros similares.
 
+          .row.align-items-center(numero="7" titulo="Material con riesgo biológico:")
+            .col-md-4
+              figure
+                img(src='@/assets/curso/tema2/img26.jpg', alt='Texto que describa la imagen')
+            .col-md-8
+              p.mb-0 Para material derivado de residuos biológicos u hospitalarios, como jeringas, instrumentación, etc, se debe tener certificado que ya fueron tratados y el riesgo fue eliminado para proceder con la fundición.
+
+          .row.align-items-center(numero="8" titulo="Material que requiere operación específica")
+            .col-md-4
+              figure
+                img(src='@/assets/curso/tema2/img27.jpg', alt='Texto que describa la imagen')
+            .col-md-8
+              p.mb-0 Materiales de difícil descargue, extradimensionados o cuyo peso sea superior a 4 toneladas deberán ser comunicados con anticipación, para coordinar, o no, su recepción.
+
+    .row.justify-content-center.mb-4
+      .col-lg-10
+        .tarjeta.color-4.p-4
+          .row.align-items-center 
+            .col-lg-12
+              .row.mb-0
+                .col-lg-1
+                  figure.mb-2
+                    img(src='@/assets/curso/temas/icon.png', alt='Texto que describa la imagen')
+                .col-lg-11
+                  p.mb-4 Diríjase al Anexo_3_Tabla5_TiposDeMetales, y afiance su saber sobre el proceso de aprovechamiento y tratamiento de los residuos (metal). Asimismo, observe atentamente el video que se encuentra en el siguiente enlace:
+                  .row
+                    .col-lg-6
+                      a.anexo.mb-0(href="https://www.youtube.com/watch?v=QnvrGBHh2XE" target="_blank")
+                        .anexo__icono
+                          img(src="@/assets/template/icono-link.svg")
+                        .anexo__texto
+                          p <b>Enlace web.</b>> Tecmany Domotica (2013, 7 julio) Reciclaje de metales
+    separador 
+
+    #t_2_6.titulo-segundo.color-acento-contenido(data-aos="fade")
+      .h2 2.6 Residuos de construcción y demolición (RCD)
+
+    .row.align-items-center 
+      .col-lg-6
+        .tarjeta.color-1.px-5.py-5
+          br
+          p.mb-0 Los sobrantes de las actividades de demolición, excavación, construcción y/o reparaciones de las obras civiles, o de otras actividades conexas, complementarias o análogas, son conocidos como los RCD. Los residuos de construcción y demolición son materiales con un alto potencial de ser reciclados, debido a la composición de sus materiales. En aquellos lugares donde no se realizan separaciones de RCD, se desaprovechan materias primas, que, con un adecuado tratamiento, podrían ser recicladas o reutilizadas.
+          br
+      .col-lg-6
+        figure
+          img(src='@/assets/curso/tema2/img28.jpg', alt='Texto que describa la imagen')
+
+    p.mb-4 Por otro lado, el no aprovechamiento de estos residuos causa problemáticas ambientales, como la inadecuada disposición, la reducción de la vida útil de rellenos sanitarios y sitios de disposición final de RCD, e impactos negativos, como el cambio paisajístico, la contaminación de fuentes hídricas, la generación de material particulado, la compactación y cambio de uso de los suelos, la colmatación de los sistemas de captación de aguas lluvia, entre otros.
+
+    .row.justify-content-center.mb-4
+      .col-lg-10
+        .tarjeta.color-4.p-4
+          .row.align-items-center 
+            .col-lg-12
+              .row.mb-0
+                .col-lg-1
+                  figure.mb-2
+                    img(src='@/assets/curso/temas/icon.png', alt='Texto que describa la imagen')
+                .col-lg-11
+                  p.mb-4 Diríjase al Anexo_3_Tabla5_TiposDeMetales, y afiance su saber sobre el proceso de aprovechamiento y tratamiento de los residuos (metal). Asimismo, observe atentamente el video que se encuentra en el siguiente enlace:
+                  .row
+                    .col-lg-6
+                      a.anexo.mb-0(href="https://www.youtube.com/watch?v=QnvrGBHh2XE" target="_blank")
+                        .anexo__icono
+                          img(src="@/assets/template/icono-pdf.svg")
+                        .anexo__texto
+                          p <b>Anexo.</b>> 4_Tabla6_ClasificaciónRCD
+    p.mb-4 Habría que decir también que los diferentes residuos que se originan en la construcción y demolición de obras pueden ser aprovechados y otros no, por lo que sólo pueden ser llevados a un sitio de disposición final. A continuación, se muestran las alternativas de uso:
+
+    .bg_grad-06
+      .row.justify-content-center.mb-4
+        .col-lg-10.mb-2
+          h5.mb-0 Tabla 7
+          span.mb-2 Alternativas de gestión de uso de los residuos
+        .col-lg-8
+          .tabla-a.color-acento-botones 
+            table
+              thead
+                tr(style='background-color: #80CAB6')
+                  th Residuo
+                  th Alternativa de uso
+              tbody
+                tr(style='background-color: #ECF7F4')
+                  td.text-center Concretos
+                  td 
+                    p.mb-0 Reutilizar como masa para rellenos
+                    p.mb-0 Reutilizar como suelos en carreteras
+                    p.mb-0 Reciclar como grava suelta
+                    p.mb-0 Reciclar para producción de morteros y cemento
+                    p.mb-0 Reciclar como granulado
+                tr(style='background-color: #D3EDE5')
+                  td.text-center Cerámicos
+                  td
+                    p.mb-0 Reciclar como adoquín
+                    p.mb-0 Reciclar como fachadas
+                    p.mb-0 Reciclar para acabados
+                tr(style='background-color: #ECF7F4')
+                  td.text-center Asfalto
+                  td 
+                    p.mb-0 Reutilizar como masa para rellenos
+                    p.mb-0 Reciclar como asfalto
+                tr(style='background-color: #D3EDE5')
+                  td.text-center Metales
+                  td 
+                    p.mb-0 Reutilizar para aplicación en otros productos
+                    p.mb-0 Reciclar como aleación
+                tr(style='background-color: #F6F6F6')
+                  td.text-center Madera
+                  td 
+                    p.mb-0 Reutilizar para casetones, vallados y linderos
+                    p.mb-0 Reciclar para tableros y aglomerados
+                tr(style='background-color: #D3EDE5')
+                  td.text-center Vidrio
+                  td 
+                    p.mb-0 Reciclaje para vidrio
+                tr(style='background-color: #D3EDE5')
+                  td.text-center Pétreos
+                  td
+                    p.mb-0 Reutilizar como áridos finos y gruesos
+                tr(style='background-color: #ECF7F4')
+                  td.text-center Plásticos
+                  td 
+                    p.mb-0 Reciclar como plásticos
+                tr(style='background-color: #D3EDE5')
+                  td.text-center Tejas, bloques, entre otros
+                  td 
+                    p.mb-0 Reciclar como base para nuevos productos
+                tr(style='background-color: #F6F6F6')
+                  td.text-center Tierra de excavación
+                  td 
+                    p.mb-0 Reutilizar como relleno y recuperación de salud
+                    p.mb-0 Estabilización de suelos
+                tr(style='background-color: #D3EDE5')
+                  td.text-center Elementos arquitectónicos
+                  td 
+                    p.mb-0 Reutilizar como nuevos productos 
+      .row.justify-content-center.mb-4
+        .col-lg-10
+          .tarjeta.color-4.p-4
+            .row.align-items-center 
+              .col-lg-12
+                .row.mb-0
+                  .col-lg-1
+                    figure.mb-2
+                      img(src='@/assets/curso/temas/icon.png', alt='Texto que describa la imagen')
+                  .col-lg-11
+                    p.mb-4 Visualice estos dos videos para ampliar su saber respecto del reciclaje de desechos de construcción:
+                    .row
+                      .col-lg-6
+                        a.anexo.mb-0(href="https://www.youtube.com/watch?v=kmY7FGBXzEU" target="_blank")
+                          .anexo__icono
+                            img(src="@/assets/template/icono-link.svg")
+                          .anexo__texto
+                            p <b>Enlace web.</b>> Unoreciclaje (2017 13 septiembre). Planta reciclaje para residuos de madera, RCD y RSI
+                      .col-lg-6
+                        a.anexo.mb-0(href="https://www.youtube.com/watch?v=Y0wYrrdN48Q" target="_blank")
+                          .anexo__icono
+                            img(src="@/assets/template/icono-link.svg")
+                          .anexo__texto
+                            p <b>Enlace web.</b>> Noticias Caracol (2019, 15 marzo). ¿Cómo se hace el reciclaje de desechos de construcción y llantas?
+      separador
+
+    #t_2_7.titulo-segundo.color-acento-contenido(data-aos="fade")
+      .h2 2.7 Residuos aparatos eléctricos, electrónicos y de telecomunicaciones (RAEE)
+
+    p.mb-4 Los RAEE son residuos de manejo diferenciado y se prohíbe su disposición final en rellenos sanitarios. Deben ser recolectados y gestionados por los productores y se prioriza su aprovechamiento mediante empresas gestoras que cuenten con licencia ambiental para ello. Es decir, la normativa busca incentivar el aprovechamiento de los residuos de aparatos eléctricos y electrónicos desde una perspectiva económica y social, y promover la participación e integración de todos los actores involucrados en la elaboración de las estrategias, planes y proyectos que desarrollen la gestión integral de los RAEE, entre otros aspectos.
+
+    TabsA.color-acento-contenido.mb-4
+      .tarjeta.color-10.p-4(titulo="Categorías de los RAEE")
+        h4 Categorías de los RAEE
+        .row.align-items-center
+          .col-lg-2            
+            figure
+              img(src='@/assets/curso/tema2/icon2.svg', alt='Texto que describa la imagen')
+          .col-lg-10
+            p.mb-0 Los grandes y pequeños electrodomésticos abarcan la línea blanca, mientras los equipos de informática y telecomunicaciones conforman la línea gris; y los aparatos electrónicos de consumo hacen parte de la línea marrón.
+
+      .tarjeta.color-10.p-4(titulo="Categorías alternas")
+        h4 Categorías alternas
+        .row.align-items-center
+          .col-lg-2            
+            figure
+              img(src='@/assets/curso/tema2/icon2.svg', alt='Texto que describa la imagen')
+          .col-lg-10
+            p.mb-0 Las demás categorías corresponden a los otros tipos de aparatos eléctricos y electrónicos que pueden ser usados tanto en el hogar como en las empresas, el comercio o en las instituciones, como los aparatos de alumbrado, las herramientas eléctricas y electrónicas (con excepción de las herramientas industriales fijas de gran envergadura), los juguetes o equipos deportivos y de ocio, los aparatos médicos (con excepción de todos los productos implantados e infectados), los instrumentos de vigilancia y control y las máquinas expendedoras de productos y dinero.
+
+      .tarjeta.color-10.p-4(titulo="Sustancias peligrosas")
+        h4 Sustancias peligrosas
+        .row.align-items-center
+          .col-lg-2            
+            figure
+              img(src='@/assets/curso/tema2/icon2.svg', alt='Texto que describa la imagen')
+          .col-lg-10
+            p.mb-0 Asimismo, se han identificado las sustancias peligrosas que más comúnmente están presentes en los RAEE. Hay que tener en cuenta que los RAEE pueden o no ser peligrosos; si el RAEE es no peligroso, se debe considerar si es especial o reciclable o no aprovechable; y si es peligroso, la forma de saberlo es teniendo en cuenta su composición, como en la tabla siguiente.
+
+      .tarjeta.color-10.p-4(titulo="Categorías alternas")
+        h4 Según la ley
+        .row.align-items-center
+          .col-lg-2            
+            figure
+              img(src='@/assets/curso/tema2/icon2.svg', alt='Texto que describa la imagen')
+          .col-lg-10
+            p.mb-0 La Ley 1672 de 2013 le da el carácter de manejo diferenciado a los RAEE, prohíbe su disposición final en los rellenos sanitarios y los restringe a rellenos de seguridad, para que sean retomados por los productores de aparatos eléctricos y electrónicos, mediante sistemas de recolección y de gestión ambientalmente segura. Así, se busca que el consumidor devuelva los RAEE sin ningún costo.
+
+    .row.justify-content-center.mb-4
+      .col-lg-10
+        .tarjeta.color-4.p-4
+          .row.align-items-center 
+            .col-lg-12
+              .row.mb-0
+                .col-lg-1
+                  figure.mb-2
+                    img(src='@/assets/curso/temas/icon.png', alt='Texto que describa la imagen')
+                .col-lg-11
+                  p.mb-2 Con el fin de profundizar y asimilar todos los aspectos relativos a los residuos RAEE, visite el Anexo_5_Tabla10_SustanciasPeligrosasRAEE
+                  p.mb-4 Asimismo, observe responsablemente los videos que se proponen en los siguientes enlaces: 
+                  .row
+                    .col-lg-6
+                      a.anexo.mb-0(href="https://www.youtube.com/watch?v=5upwOp_73yw" target="_blank")
+                        .anexo__icono
+                          img(src="@/assets/template/icono-link.svg")
+                        .anexo__texto
+                          p <b>Enlace web.</b>> Unoreciclaje (2015, 5 noviembre). Planta de reciclado de R.A.E.E
+                    .col-lg-6
+                      a.anexo.mb-0(href="https://www.youtube.com/watch?v=PwJgk1uAzxA" target="_blank")
+                        .anexo__icono
+                          img(src="@/assets/template/icono-link.svg")
+                        .anexo__texto
+                          p <b>Enlace web.</b>> Twenergy (2015, 26 de marzo). El reciclaje de materiales electrónicos
+    separador
+
+    #t_2_8.titulo-segundo.color-acento-contenido(data-aos="fade")
+      .h2 2.8 Residuos orgánicos
+
+    .row.align-items-center.mb-4
+      .col-lg-6
+        .tarjeta.color-1.px-5.py-5
+          br
+          p.mb-0 La mayor cantidad de residuos sólidos que se generan son orgánicos, por lo que esto representa una problemática por resolver. De acuerdo con la GTC 53-7 (2006), existen diferentes estrategias alternativas de tratamiento de residuos orgánicos no peligrosos, las cuales consisten principalmente en la aplicación de procesos biológicos y/o bioquímicos, termoquímicos, físicos y/o fisicoquímicos.
+          br
+      .col-lg-6
+        figure
+          img(src='@/assets/curso/tema2/img29.jpg', alt='Texto que describa la imagen')
+
+    .row.justify-content-center.mb-4
+      .col-lg-10
+        .tarjeta.color-4.p-4
+          .row.align-items-center 
+            .col-lg-12
+              .row.mb-0
+                .col-lg-1
+                  figure.mb-2
+                    img(src='@/assets/curso/temas/icon.png', alt='Texto que describa la imagen')
+                .col-lg-11
+                  p.mb-4 Para estudiar todos los aspectos teóricos y conceptuales relativos al manejo y administración de residuos sólidos orgánicos, diríjase al Anexo_6_ResiduosOrganicosMetodosAprovechamiento
+                  .row
+                    .col-lg-8
+                      a.anexo.mb-0(href="https://www.youtube.com/watch?v=5upwOp_73yw" target="_blank")
+                        .anexo__icono
+                          img(src="@/assets/template/icono-pdf.svg")
+                        .anexo__texto
+                          p <b>Anexo.</b>> Anexo_6_ResiduosOrganicosMetodosAprovechamiento
+                
 </template>
 
 <script>

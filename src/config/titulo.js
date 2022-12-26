@@ -1,2 +1,2 @@
 module.exports =
-  'Componente Formativo con un nombre extremadamente largo y extenso'
+  'Gestionar integralmente el manejo de residuos según normativa vigente'

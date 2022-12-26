@@ -61,18 +61,18 @@ div
   #botones.titulo-segundo.color-acento-botones
     h2 Botones
 
-  .mb-3
-    //- .boton debe ir acompañado de una de una de estas clases => 
-    //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-    a.boton.me-3.indicador__container(
-      :href="obtenerLink('downloads/prueba.pdf')"
-      target="_blank"
-      type="application/pdf"
-      @mouseover="mostrarIndicador = false"
-    )
-      span Descargar
-      i.fas.fa-file-download
-      .indicador--click(v-if="mostrarIndicador")
+    .mb-3
+      //- .boton debe ir acompañado de una de una de estas clases => 
+      //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+      a.boton.me-3.indicador__container(
+        :href="obtenerLink('downloads/prueba.pdf')"
+        target="_blank"
+        type="application/pdf"
+        @mouseover="mostrarIndicador = false"
+      )
+        span Descargar
+        i.fas.fa-file-download
+        .indicador--click(v-if="mostrarIndicador")
 
   .mb-3
     a.boton.color-primario.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
